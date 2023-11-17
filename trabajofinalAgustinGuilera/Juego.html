@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleindex.css">
+    <link rel="icon"    href="./imagenes/logo.png">
+    <title>Juego</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="31" fill="#333"/>
+                <path d="M28 28L40 40" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                <path d="M28 40L40 28" stroke="white" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            </a>
+
+            <ul class="menu">
+                <li class="item-menu"><a class="item-link" href="./historia-1.html">HISTORIA</a></li>
+                <li class="item-menu"><a class="item-link" href="./Juego.html">JUGUEMOS</a></li>
+              
+            </ul>
+
+
+            </nav>
+
+            <header>
+                <h1 class="titulo-principal">VAMO A JUGAR</h1> 
+         </header>
+
+
+         <main>
+            <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+            
+                    <section class="juego">
+                        <div class="cajas" >
+                            <div class="caja" id="cajasoltar">
+                                <p>Arrastre y suelte la imágene aquí</p>
+                            </div>
+                            <div class="caja" id="cajasoltar2">
+                                <p>Arrastre y suelte la imágene aquí</p>
+                            </div>
+                            <div class="caja" id="cajasoltar3">
+                                <p>Arrastre y suelte la imágene aquí</p>
+                            </div>
+                        </div>
+                        <div id="cajaimagenes" >
+                            <img id="imagen1" src="./imagenes/rompe2.png" alt="imagen" />
+                            <img id="imagen2" src="./imagenes/Rompe1.png" alt="imagen" />
+                            <img id="imagen3" src="./imagenes/Rompe3.png" alt="imagen" />
+                        </div>
+                    </section>
+                    <button onclick="reinicio()" class="botonesVideo reinicio" >Reiniciar</button>
+
+                    <script src="./juegos.js"></script>
+            
+                </main>
+    
+</body>
+</html>

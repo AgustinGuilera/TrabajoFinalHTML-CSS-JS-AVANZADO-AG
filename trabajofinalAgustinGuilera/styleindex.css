@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181D31
+ 
+}
+.background-image {
+    position:absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(./imagenes/codigo.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+   
+   }
+   
+   
+   .menu{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+   }
+   main{
+       padding: 100px 20px;
+   }
+   .item-menu{
+    list-style-type: none;
+    
+   }
+   .item-link, .botonesVideo{
+       box-shadow: 3px 5px #678983;
+       border-radius: 10px;
+       padding: 10px;
+       text-decoration:underline;
+       background-color: #E6DDC4;
+       color:#181D31 ;
+       font-weight: 300;
+       
+   }
+   .item-menu:active{
+       transform: translate(3px, 2px);
+   }
+   .item-menu:active > .item-link{
+       box-shadow:0px 0px ;
+   }
+   
+   .flexItem{
+    display: block;
+   }
+
+/*-----------------Estructura---------*/
+
+   header{
+    background-image: url(./imagenes/codigo.jpg);
+    background-size: cover;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 100px;
+   
+   }
+   h1{
+   
+       text-shadow: 4px 6px gray, 8px 10px black;
+   }
+   h2{
+       text-shadow: 4px 6px black;
+       font-size:50px ; 
+       text-align: center;
+       color: #678983;
+   }
+   .titulo-principal{
+    text-align: center;
+   }
+   
+   .cont{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+   }
+   
+   .tarjetas{
+    width: 350px;
+    height: 400px;
+    border: 5px solid #678983;
+    background-color: #E6DDC4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   .desc-card{
+   width: 90%;
+   text-align: center;
+   height: 30px;
+   color:#181D31;
+   }
+   
+   .img-card{
+    width: 100%;
+    margin: 0px;
+   
+   }
+   
+   .boton-ver{
+       padding: 10px ;
+      border-radius: 10px;
+      background-color: #181D31;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 2px 3px #678983;
+      text-align: center;
+       text-decoration: none;
+       width: 40%;
+       margin-bottom: 20px;
+   }
+   
+   .boton-ver:active{
+       box-shadow: 0px 0px darkgray;
+       transform: translate(3px, 2px);
+   }
+   
+
+   /*-------------------PAGinahistoria*---------------------*/
+   .cont-historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tarj-hist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:80px 50px;
+    gap: 10px;
+    color: azure;
+
+    
+}
+.text-hist{
+    width: 30%;
+}
+
+.contenedorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+
+}
+.barra{
+    background-color: #c92222;
+
+    border-radius: 10px;
+    padding: 32px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.botonera{
+    display: flex;
+    gap: 30px;
+}
+.container{
+    padding: 5px;
+    background-color: rgb(243, 240, 240);
+    width: 70%;
+}
+
+#play,#pause{
+   width: 80px;
+}
+
+
+.botonesVideo:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
+
+
+
+/*-------juegos-----*/
+
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cajas{
+    display: flex;
+    flex-direction: row;
+}
+.caja{
+    width: 290px;
+    height: 430px;
+    display: flex;
+    border: 2px solid rgb(235, 12, 12);
+    background-color: rgb(248, 242, 242);
+    text-align:justify;
+    justify-content: center;
+    align-items: center;
+}
+.caja:hover{
+    background-color: #b41111;
+    
+}
+.caja:hover>p{
+    color: #E6DDC4;
+}
+#cajaimagenes{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 50px;
+}
+#imagen1,#imagen2,#imagen3{
+    width: 290px;
+    height: 430px;
+}
+.reinicio{
+    display: flex;
+    margin: auto;
+    padding: 20px 150px;
+}
